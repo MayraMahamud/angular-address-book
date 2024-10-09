@@ -1,0 +1,23 @@
+<!--<ul>
+    <li *ngFor="let c of contacts">
+      <span id="item{{ c.id }}" class="green">{{ c.firstname }}</span>
+      <span id="item{{ c.id }}" class="green">{{ c.lastname }}</span>
+    </li>
+  </ul>
+  -->
+
+    <h2>Contacts</h2>
+      <tr *ngFor="let c of contacts">
+        <div class="contactForm">
+            {{c.firstname}} {{c.lastname}}
+        <!-- <a routerLink="/contacts/">{{ c.firstname }} {{ c.lastname }}</a>-->
+         <a routerLink="/contacts/{{ c.id }}">View</a>
+        
+    
+
+  
+    </div>
+
+   
+
+  
